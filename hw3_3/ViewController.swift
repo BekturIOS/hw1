@@ -34,6 +34,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     @IBAction func Button(_ sender: Any) {
         
         if TextField.text?.isEmpty ?? true{
+            TextField.placeholder = "Введите "
             TextField.layer.borderWidth = 1
             TextField.layer.borderColor = UIColor.red.cgColor
         }
@@ -42,6 +43,9 @@ class ViewController: UIViewController, UITextViewDelegate {
             TextField2.layer.borderColor = UIColor.red.cgColor
         }
     }
+    
+    
+    
     
     
     @IBAction func SignIn(_ sender: Any) {
